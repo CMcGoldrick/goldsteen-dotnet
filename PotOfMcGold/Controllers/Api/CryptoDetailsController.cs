@@ -53,8 +53,13 @@ namespace PotOfMcGold.Controllers.Api
                         $"<div>Market Cap: {get.MarketCap}</div>" +
                         $"<div>Slug: {get.Slug}</div>" +
                         $"<div>Supply: {get.Supply}</div>" + 
-                        $"<div>Volume: {get.Volume}</div>"
-                        
+                        $"<div>Volume: {get.Volume}</div>" + 
+                        $"<div>24hr Change: {get.Change}</div>" + 
+                        $"<div>1 hr Change: {get.Change1Hour}</div>" + 
+                        $"<div>1 week Change: {get.Change1Week}</div>" + 
+                        $"<div>All Time High: {get.AllTimeHigh}</div>" + 
+                        $"<div>All Time Low: {get.AllTimeLow}</div>" +
+                        $"<div>Earliest Pirce: {get.EarliestKnownPrice}</div>"
                      );
         }
     }

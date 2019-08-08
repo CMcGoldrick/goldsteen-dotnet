@@ -89,3 +89,15 @@ textarea {
     margin-top: 10px;
     margin-right: 11px;
 }
+
+/*-- footer --*/
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    padding-top: 5px;
+}

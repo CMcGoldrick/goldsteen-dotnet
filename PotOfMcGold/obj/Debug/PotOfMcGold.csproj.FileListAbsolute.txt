@@ -277,4 +277,3 @@ C:\Users\cmcgoldrick\Desktop\PotOfMcGold\PotOfMcGold\obj\Debug\PotOfMcGold.cspro
 C:\Users\cmcgoldrick\Desktop\PotOfMcGold\PotOfMcGold\obj\Debug\PotOfMcGold.csproj.CopyComplete
 C:\Users\cmcgoldrick\Desktop\PotOfMcGold\PotOfMcGold\obj\Debug\PotOfMcGold.dll
 C:\Users\cmcgoldrick\Desktop\PotOfMcGold\PotOfMcGold\obj\Debug\PotOfMcGold.pdb
-C:\Users\cmcgoldrick\source\repos\PotOfMcGold\PotOfMcGold\obj\Debug\PotOfMcGold.csprojAssemblyReference.cache

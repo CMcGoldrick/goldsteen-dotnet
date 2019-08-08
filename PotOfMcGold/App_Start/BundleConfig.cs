@@ -22,11 +22,13 @@ namespace PotOfMcGold
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css",
-                      "~/Content/cryptos-page.css"
-                      ));
+            var googleFont = "https://fonts.googleapis.com/css?family=Kanit&display=swap";
+                       
+            bundles.Add(new StyleBundle("~/Content/css", googleFont).Include(
+                "~/Content/bootstrap.css",
+                "~/Content/site.css",
+                "~/Content/cryptos-page.css"
+                ));
         }
     }
 }
