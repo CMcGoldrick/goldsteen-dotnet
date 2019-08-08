@@ -1,0 +1,23 @@
+﻿@model PotOfMcGold.Models.Portfolio
+
+@{
+    ViewBag.Title = "EditView";
+}
+
+<form id="portfolio-edit-form" action="/portfolios/edit/@Model.Id" method="post">
+    <div class="form-row">
+        <div class="form-group col-md-2">
+            <input autocomplete="off" class="form-control" placeholder="@Model.Name" type="text" id="name" name="name" value="@Model.Name">
+        </div>
+        <div class="form-group col-md-2">
+            <input autocomplete="off" class="form-control" placeholder="@Model.Volume" type="text" id="volume" name="volume" value="@Model.Volume">
+        </div>
+        <div class="form-group col-md-2">
+            <input autocomplete="off" class="form-control" placeholder="@Model.Notes" type="text" id="notes" name="notes" value="@Model.Notes">
+        </div>
+
+        <div class="form-group col-md-2">
+            <button type="submit" class="btn btn-warning">Change Change</button>
+        </div>
+    </div>
+</form>

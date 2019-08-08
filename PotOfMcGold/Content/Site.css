@@ -1,0 +1,91 @@
+﻿body {
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.menu-logo {
+    font-weight:bold;
+    color: #f2a900;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 24px;
+    text-align: center;
+    padding:10px;
+}
+
+.btn-warning {
+    background-color: #f2a900 !important;
+    color: #000;
+    font-weight: bold !important;
+}
+
+
+.red{
+    color: red !important; 
+}
+.green {
+    color: limegreen !important;
+}
+
+
+
+/*--- nav ---*/
+#calculator-btn {
+    margin-top: 8px;
+}
+
+
+/*---- Calculator ---*/
+#calculator-form {
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+.saleh {
+    margin: 0 auto;
+}
+
+.calcontainer {
+    width: 316px;
+}
+
+#panel {
+    text-align: right;
+    width: 274px;
+    height: 80px;
+    font-size: 26px;
+    background-color: white;
+}
+
+    #panel:hover {
+        cursor: col-resize;
+    }
+
+.bttn {
+    margin-bottom: 8px;
+    margin-left: 5px;
+    width: 59px;
+    height: 45px;
+    font-size: 22px;
+}
+
+.bttne {
+    /* last er 2 ta button  ke style korar jonne ai class */
+    width: 120px;
+    margin-top: 10px;
+    margin-right: 11px;
+}

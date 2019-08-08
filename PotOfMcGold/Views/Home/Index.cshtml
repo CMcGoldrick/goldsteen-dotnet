@@ -1,0 +1,25 @@
+﻿@model IEnumerable<PotOfMcGold.Models.Portfolio>
+
+@{
+    ViewBag.Title = "Pot of McGold";
+
+    string progress = Model.First().Volume * 100 + "%";
+}
+
+<h2 style="text-align:center"> The road to a Bitcoin</h2>
+<p style="text-align:center">Progress: @progress</p>
+
+<div class="progress">
+    <div class="progress-bar bg-warning" role="progressbar" style="width:@progress" aria-valuenow="@progress" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+      
+    </div>
+    <div class="col-md-4">
+       
+    </div>
+    <div class="col-md-4">
+     
+    </div>
+</div>

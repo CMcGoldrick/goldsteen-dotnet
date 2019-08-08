@@ -1,0 +1,17 @@
+﻿@model PotOfMcGold.Models.ExchangeIndexClass.ExchangeIndex
+
+@{
+    ViewBag.Title = "Index";
+
+    int l = Model.Payload.Length;
+    int i;
+}
+
+
+@for(i=0; i< l; i++)
+{
+    <div>
+        <a href="@Model.Payload[i].Website" target="_blank">@Model.Payload[i].Name</a>
+    </div>
+}
+
