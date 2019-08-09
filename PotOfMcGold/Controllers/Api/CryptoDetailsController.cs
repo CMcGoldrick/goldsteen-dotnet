@@ -12,8 +12,8 @@ namespace PotOfMcGold.Controllers.Api
 {
     public class CryptoDetailsController : ApiController
     {
-        const string key1 = "a07362a5a5460d736395ff2f3f17a26c8e4004c4";
-        const string key2 = "01df8d4747ed7584b4c1b9df5c0a9a984357f468";
+        //const string key1 = "a07362a5a5460d736395ff2f3f17a26c8e4004c4";
+        //const string key2 = "01df8d4747ed7584b4c1b9df5c0a9a984357f468";
 
         class ApiCall
         {
@@ -29,7 +29,7 @@ namespace PotOfMcGold.Controllers.Api
                 //var client = new RestClient();
                 //var request = new RestRequest(url, Method.GET);
                 //request.AddHeader("Content-Type", "application/json");
-                //request.AddHeader("X-API-Key", key2);
+                //request.AddHeader("X-API-Key", key);
 
                 //IRestResponse response = client.Execute(request);
                 //var content = response.Content;
@@ -49,18 +49,7 @@ namespace PotOfMcGold.Controllers.Api
             var get = serialized.Payload;
 
             return Ok(
-                     $"<h4 class='crypto-name-modal'><img src='data:image/svg+xml;base64,{get.Logo.ImageData}'>  {get.Name}</h4><table class='table table-borderless'><tbody><tr><th scope ='row'>Price</th><td>{get.Price}</td></tr><tr><th scope='row'>Market Cap</th><td>{get.MarketCap}</td></tr><tr><th scope'row'>Supply</th><td>{get.Supply}</td></tr><tr><th scope ='row'>Volume</th><td>{get.Volume}</td></tr><tr><th scope ='row'>24hr Change</th><td>{get.Change}</td></tr><tr><th scope ='row'>1hr Change</th><td>{get.Change1Week}</td></tr><tr><th scope ='row'>1week Change</th><td>{get.Change1Week}</td></tr><tr><th scope ='row'>All Time High</th><td>{get.AllTimeHigh}</td></tr><tr><th scope ='row'>All Time Low</th><td>{get.AllTimeLow}</td></tr><tr><th scope ='row'>Earliest Price</th><td>{get.EarliestKnownPrice}</td></tr></tbody></table>"
-                     //$"<h4><img src='data:image/svg+xml;base64,{get.Logo.ImageData}'>  {get.Name}</h4>" +
-                     //        $"<div>Price: {get.Price}</div>" +
-                     //        $"<div>Market Cap: {get.MarketCap}</div>" +
-                     //        $"<div>Supply: {get.Supply}</div>" + 
-                     //        $"<div>Volume: {get.Volume}</div>" + 
-                     //        $"<div>24hr Change: {get.Change}</div>" + 
-                     //        $"<div>1 hr Change: {get.Change1Hour}</div>" + 
-                     //        $"<div>1 week Change: {get.Change1Week}</div>" + 
-                     //        $"<div>All Time High: {get.AllTimeHigh}</div>" + 
-                     //        $"<div>All Time Low: {get.AllTimeLow}</div>" +
-                     //        $"<div>Earliest Pirce: {get.EarliestKnownPrice}</div>"
+                     $"<h4 class='crypto-name-modal'><img style='padding-right:6px;' src='data:image/svg+xml;base64,{get.Logo.ImageData}'>{get.Name}</h4><table class='table table-borderless'><tbody><tr><th scope ='row'>Price</th><td>$ {get.Price}</td></tr><tr><th scope='row'>Market Cap</th><td>{get.MarketCap}</td></tr><tr><th scope'row'>Supply</th><td>{get.Supply}</td></tr><tr><th scope ='row'>Volume</th><td>{get.Volume}</td></tr><tr><th scope ='row'>24hr Change</th><td class={(get.Change > 0 ? "green" : "red")}>{get.Change}</td></tr><tr><th scope ='row'>1hr Change</th><td class={(get.Change1Hour > 0 ? "green" : "red")}>{get.Change1Hour}</td></tr><tr><th scope ='row'>1week Change</th><td class={(get.Change1Week > 0 ? "green" : "red")}>{get.Change1Week}</td></tr><tr><th scope ='row'>All Time High</th><td>{get.AllTimeHigh}</td></tr><tr><th scope ='row'>All Time Low</th><td>{get.AllTimeLow}</td></tr><tr><th scope ='row'>Earliest Price</th><td>{get.EarliestKnownPrice}</td></tr></tbody></table>"
                      );
         }
     }

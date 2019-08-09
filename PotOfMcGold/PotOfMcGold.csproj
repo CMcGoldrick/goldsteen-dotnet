@@ -281,6 +281,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\heavy-black-heart.png" />
     <Content Include="Images\SVG\Spinner-1s-200px.svg" />
     <Content Include="notes.txt" />
     <Content Include="Scripts\bootstrap.js" />

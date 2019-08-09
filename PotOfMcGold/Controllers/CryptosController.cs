@@ -18,9 +18,9 @@ namespace PotOfMcGold.Controllers
                 var time = DateTime.Now;
                 string key;
                 if (time.Hour % 2 == 0)
-                    { key = "01df8d4747ed7584b4c1b9df5c0a9a984357f468"; }
+                { key = "01df8d4747ed7584b4c1b9df5c0a9a984357f468"; }
                 else
-                    { key = "a07362a5a5460d736395ff2f3f17a26c8e4004c4"; }
+                { key = "a07362a5a5460d736395ff2f3f17a26c8e4004c4"; }
 
                 //var client = new RestClient();
                 //var request = new RestRequest(url, Method.GET);
