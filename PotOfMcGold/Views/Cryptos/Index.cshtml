@@ -7,7 +7,6 @@
     string selectedVar = "";
 }
 
-
 <table class="table table-dark">
     <thead>
         <tr>
@@ -35,15 +34,14 @@
     </tbody>
 </table>
 
-
 <div class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body" id="mod-content">
-                <h5>Loading...</h5>
+                <img src="~/Images/SVG/Spinner-1s-200px.svg" class="loading-svg"/>
             </div>
             <div class="modal-footer">
-                <button onclick="clearData()" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button onclick="clearData()" type="button" class="btn btn-default modal-btn" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
@@ -67,6 +65,14 @@
 
     function clearData() {
         var modal = $("#mod-content");
-        modal.html("<h5>Loading...</h5>");
+        modal.html("<img src='/Images/SVG/Spinner-1s-200px.svg' class='loading-svg'/>");
     }
+
+    $(document).mouseup(function (e) {
+        var container = $("#mod-content");
+        if (!container.is(e.target) && container.has(e.target).length === 0) {
+            container.html("<img src='/Images/SVG/Spinner-1s-200px.svg' class='loading-svg'/>");
+        }
+    });
+
 </script>

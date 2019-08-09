@@ -3,7 +3,7 @@
 @{
     ViewBag.Title = "Pot of McGold";
 
-    string progress = Model.First().Volume * 100 + "%";
+    string progress = (Model.First().Volume * 100).ToString() +"%";
 }
 
 <h2 style="text-align:center"> The road to a Bitcoin</h2>
@@ -23,3 +23,4 @@
      
     </div>
 </div>
+

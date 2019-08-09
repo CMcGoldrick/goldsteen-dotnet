@@ -27,6 +27,11 @@ textarea {
     padding:10px;
 }
 
+.loading-svg{
+    display:block;
+    margin: 0 auto;
+}
+
 .btn-warning {
     background-color: #f2a900 !important;
     color: #000;
@@ -101,3 +106,25 @@ footer {
     background-color: #000;
     padding-top: 5px;
 }
+
+/*-- crypto modal --*/
+.modal-btn{
+    display: block;
+    margin: 0 auto;
+}
+.modal-btn:hover{
+    background-color: var(--btc-color);
+}
+
+.crypto-name-modal {
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
