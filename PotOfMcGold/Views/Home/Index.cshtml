@@ -4,22 +4,29 @@
     ViewBag.Title = "Pot of McGold";
 
     string progress = (Model.First().Volume * 100).ToString() +"%";
+
+    double satoshis = Math.Truncate(Model.First().Volume * 100000000);
+
+    string satoshistring = satoshis.ToString("#,##0.00");
 }
 
-<h2 style="text-align:center"> The road to a Bitcoin</h2>
-<p style="text-align:center">Progress: @progress</p>
+<h2 class="text-center"> The Bitcoin Road</h2>
+<p class="text-center">
+    Progress: @progress <i class="fa fa-arrow"></i> @satoshistring Satoshis
+</p>
 
 <div class="progress">
     <div class="progress-bar bg-warning" role="progressbar" style="width:@progress" aria-valuenow="@progress" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-2">
       
     </div>
-    <div class="col-md-4">
-       
+    <div class="col-md-8">
+       <h4 class="text-center">Donate BTC:</h4>
+       <p class="text-center">3HPHomj5FZ3QM6unZnHWMZwcCmEBswadsx</p>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-2">
      
     </div>
 </div>

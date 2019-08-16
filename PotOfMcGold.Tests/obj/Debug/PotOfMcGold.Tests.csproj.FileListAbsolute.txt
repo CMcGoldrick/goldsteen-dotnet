@@ -116,3 +116,5 @@ C:\Users\cmcgoldrick\source\repos\PotOfMcGold\PotOfMcGold.Tests\bin\Debug\System
 C:\Users\cmcgoldrick\source\repos\PotOfMcGold\PotOfMcGold.Tests\bin\Debug\System.Web.Http.xml
 C:\Users\cmcgoldrick\source\repos\PotOfMcGold\PotOfMcGold.Tests\bin\Debug\System.Web.Http.WebHost.xml
 C:\Users\cmcgoldrick\source\repos\PotOfMcGold\PotOfMcGold.Tests\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\cmcgoldrick\source\repos\PotOfMcGold\PotOfMcGold.Tests\bin\Debug\RestSharp.dll
+C:\Users\cmcgoldrick\source\repos\PotOfMcGold\PotOfMcGold.Tests\bin\Debug\RestSharp.xml

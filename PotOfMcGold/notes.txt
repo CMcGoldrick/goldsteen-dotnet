@@ -1,5 +1,6 @@
 ﻿---  Pot of McGold ---
-pushing notes
+great tutorial on deploying an app to Azure
+https://docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase?utm_source=tutorials&utm_medium=referral&utm_campaign=aspnet_sql
 
 investment page:
 - list investment history (fiat) to track exact $ amount invested ever

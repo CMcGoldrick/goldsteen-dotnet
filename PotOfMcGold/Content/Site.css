@@ -1,4 +1,8 @@
-﻿body {
+﻿:root {
+    --btc-color: #f2a900;
+}
+
+body {
     padding-top: 80px;
     padding-bottom: 20px;
 }
@@ -16,6 +20,10 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+button:hover{
+    background-color: var(--btc-color);
 }
 
 .menu-logo {
@@ -46,11 +54,15 @@ textarea {
     color: limegreen !important;
 }
 
+.fa{
+    color: var(--btc-color);
+}
 
 
 /*--- nav ---*/
 #calculator-btn {
     margin-top: 8px;
+    color: #333;
 }
 
 

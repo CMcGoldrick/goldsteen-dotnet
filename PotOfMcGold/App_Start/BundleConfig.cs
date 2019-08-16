@@ -25,6 +25,7 @@ namespace PotOfMcGold
             var googleFont = "https://fonts.googleapis.com/css?family=Kanit&display=swap";
                        
             bundles.Add(new StyleBundle("~/Content/css", googleFont).Include(
+                //"~/Content/font-awesome.min.css",
                 "~/Content/bootstrap.css",
                 "~/Content/site.css",
                 "~/Content/cryptos-page.css"
