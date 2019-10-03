@@ -8,6 +8,7 @@ using PotOfMcGold.Models;
 
 namespace PotOfMcGold.Controllers
 {
+    [Authorize]
     public class InvestmentsController : Controller
     {
         private ApplicationDbContext _context;

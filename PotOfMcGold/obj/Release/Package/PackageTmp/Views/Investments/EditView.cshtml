@@ -1,0 +1,45 @@
+﻿@model PotOfMcGold.Models.Investment
+
+
+@{
+    ViewBag.Title = "EditView";
+}
+
+<form id="investment-edit-form" action="/investments/edit/@Model.Id" method="post">
+    <div class="form-row">
+        <div class="form-group col-md-2">
+            <input autocomplete="off" class="form-control" placeholder="@Model.Date" type="text" id="date" name="date" value="@Model.Date">
+        </div>
+        <div class="form-group col-md-2">
+            <select autocomplete="off" class="form-control" type="text" id="name" name="name" value="@Model.Name">
+                <option selected="selected">@Model.Name</option>
+                <option>BTC</option>
+                <option>BXY</option>
+                <option>EOS</option>
+                <option>ETH</option>
+                <option>LTC</option>
+                <option>USDC</option>
+                <option>XRP</option>
+                <option>ZEC</option>
+            </select>
+        </div>
+        <div class="form-group col-md-2">
+            <select autocomplete="off" class="form-control" placeholder="@Model.Exchange" type="text" id="exchange" name="exchange" value="@Model.Exchange">
+                <option selected="selected">@Model.Exchange</option>
+                <option>Coinbase</option>
+                <option>Binance</option>
+                <option>Beaxy</option>
+            </select>
+        </div>
+        <div class="form-group col-md-2">
+            <input autocomplete="off" class="form-control" placeholder="@Model.Amount" type="text" id="amount" name="amount" value="@Model.Amount">
+        </div>
+        <div class="form-group col-md-2">
+            <input autocomplete="off" class="form-control" placeholder="@Model.Notes" type="text" id="notes" name="notes" value="@Model.Notes">
+        </div>
+
+        <div class="form-group col-md-2">
+            <button type="submit" class="btn btn-warning">Change Change</button>
+        </div>
+    </div>
+</form>

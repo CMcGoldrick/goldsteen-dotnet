@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace PotOfMcGold.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private ApplicationDbContext dbcontext;

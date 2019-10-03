@@ -5,14 +5,12 @@
 
     string progress = (Model.First().Volume * 100).ToString() +"%";
 
-    double satoshis = Math.Truncate(Model.First().Volume * 100000000);
-
-    string satoshistring = satoshis.ToString("#,##0.00");
+    string satoshis = Math.Truncate(Model.First().Volume * 100000000).ToString("#,##0.00");
 }
 
 <h2 class="text-center"> The Bitcoin Road</h2>
 <p class="text-center">
-    Progress: @progress <i class="fa fa-arrow"></i> @satoshistring Satoshis
+    Progress: @progress >> @satoshis Satoshis
 </p>
 
 <div class="progress">
@@ -20,14 +18,13 @@
 </div>
 <div class="row">
     <div class="col-md-2">
-      
     </div>
     <div class="col-md-8">
-       <h4 class="text-center">Donate BTC:</h4>
-       <p class="text-center">3HPHomj5FZ3QM6unZnHWMZwcCmEBswadsx</p>
+        <h4 class="text-center">Donate BTC:</h4>
+        <p id="btc-address" class="text-center">3HPHomj5FZ3QM6unZnHWMZwcCmEBswadsx</p>
+        <button style="display:block; margin:0 auto"onclick="copyCalcVal()" type="button" class="btn btn-default" data-dismiss="modal">Copy Number</button>
     </div>
-    <div class="col-md-2">
-     
+    <div class="col-md-2">     
     </div>
 </div>
 

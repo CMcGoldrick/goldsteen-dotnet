@@ -1,0 +1,12 @@
+﻿/*:root {
+    --btc-color: #f2a900;
+}*/
+
+.list-name{
+    font-weight: bold;
+}
+
+.list-name:hover{
+    cursor: pointer;
+    color: var(--btc-color)
+}

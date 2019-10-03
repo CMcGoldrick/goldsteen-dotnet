@@ -9,6 +9,7 @@ using PotOfMcGold.Models;
 
 namespace PotOfMcGold.Controllers
 {
+    [Authorize]
     public class CryptosController : Controller
     {
         class ApiCall

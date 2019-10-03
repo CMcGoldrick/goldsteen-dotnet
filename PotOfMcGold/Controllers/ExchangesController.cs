@@ -9,6 +9,7 @@ using Newtonsoft.Json;
 
 namespace PotOfMcGold.Controllers
 {
+    [Authorize]
     public class ExchangesController : Controller
     {
         const string key1 = "a07362a5a5460d736395ff2f3f17a26c8e4004c4";

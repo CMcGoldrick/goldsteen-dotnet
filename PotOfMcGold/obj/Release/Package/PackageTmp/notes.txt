@@ -1,0 +1,41 @@
+﻿---  Pot of McGold ---
+great tutorial on deploying an app to Azure
+https://docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase?utm_source=tutorials&utm_medium=referral&utm_campaign=aspnet_sql
+
+investment page:
+- list investment history (fiat) to track exact $ amount invested ever
+	
+	database fields:
+	user_id
+	transaction amount (fiat)
+	crypto name (has to be from dropdown to avoid mistypes)
+	crypto volume
+
+	checklist:
+	add ability to update and delete each listing
+
+
+portfolio page:
+- total portfolio table (volume, current value > pulled in from API)
+	
+	database fields:
+	crypto name (has to be from dropdown to avoid mistypes > perhaps pull in from API?)
+
+
+
+
+exchange checker:
+- search crypto name and display all exchange where crypto is listed
+	- for each exchange display  > price, volume etc etc (figure out what data to use)
+
+
+
+WISHLIST:
+- backup database for saved investment data
+- create user accounts (personalized portfolios and investments)
+
+
+
+
+
+
