@@ -12,5 +12,7 @@ namespace PotOfMcGold.Models
         public string Name { get; set; }
         public float Volume { get; set; }
         public string Notes { get; set; }
+        public int CurrentValue { get; set; }
+
     }
 }

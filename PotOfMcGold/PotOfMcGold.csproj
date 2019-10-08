@@ -262,6 +262,10 @@
     <Compile Include="Migrations\201907282308056_ChangeVolumeToFloat.Designer.cs">
       <DependentUpon>201907282308056_ChangeVolumeToFloat.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910040037180_AddCurrentValueToCrypto.cs" />
+    <Compile Include="Migrations\201910040037180_AddCurrentValueToCrypto.Designer.cs">
+      <DependentUpon>201910040037180_AddCurrentValueToCrypto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Crypto.cs" />
@@ -345,6 +349,7 @@
     <Content Include="Views\Cryptos\Index.cshtml" />
     <Content Include="Views\Cryptos\DetailsView.cshtml" />
     <Content Include="Views\Exchanges\Index.cshtml" />
+    <Compile Include="ViewModels\PortfolioViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -393,6 +398,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201907282308056_ChangeVolumeToFloat.resx">
       <DependentUpon>201907282308056_ChangeVolumeToFloat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910040037180_AddCurrentValueToCrypto.resx">
+      <DependentUpon>201910040037180_AddCurrentValueToCrypto.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

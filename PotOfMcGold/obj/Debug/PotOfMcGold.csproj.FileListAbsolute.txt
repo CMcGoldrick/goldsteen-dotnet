@@ -277,3 +277,5 @@ C:\Users\cmcgoldrick\source\repos\PotOfMcGold\PotOfMcGold\obj\Debug\PotOfMcGold.
 C:\Users\cmcgoldrick\source\repos\PotOfMcGold\PotOfMcGold\obj\Debug\PotOfMcGold.csproj.CopyComplete
 C:\Users\cmcgoldrick\source\repos\PotOfMcGold\PotOfMcGold\obj\Debug\PotOfMcGold.dll
 C:\Users\cmcgoldrick\source\repos\PotOfMcGold\PotOfMcGold\obj\Debug\PotOfMcGold.pdb
+C:\Users\cmcgoldrick\source\repos\PotOfMcGold\PotOfMcGold\obj\Debug\PotOfMcGold.csprojAssemblyReference.cache
+C:\Users\cmcgoldrick\source\repos\PotOfMcGold\PotOfMcGold\obj\Debug\PotOfMcGold.Migrations.AddCurrentValueToCrypto.resources
